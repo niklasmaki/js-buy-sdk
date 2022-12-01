@@ -44,6 +44,10 @@ fragment ProductFragment on Product {
     }
   }
   media(first: 250) {
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+    }
     edges {
       node {
         ... on ExternalVideo {
