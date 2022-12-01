@@ -48,7 +48,7 @@ fragment ProductFragment on Product {
       node {
         ... on ExternalVideo {
           id
-          originUrl: url
+          originUrl
           previewImage {
             id
             src: url
